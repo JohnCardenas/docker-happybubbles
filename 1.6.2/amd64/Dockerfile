@@ -1,4 +1,4 @@
-FROM golang:1.8.3-alpine
+FROM golang:1.8.3
 MAINTAINER John Cardenas <cardenas.john.j@gmail.com>
 
 ARG VERSION="1.6.2"
