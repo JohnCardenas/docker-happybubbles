@@ -9,13 +9,13 @@ At this time, only an amd64 image is built automatically. However, if you would 
 ## Usage
 ### Simple Command Line
 The following command will start the server using the default MQTT parameters:
->`docker run -it --name happybubbles-presence -p 5555:5555 johncardenas/happybubbles:latest`
+>`docker run -it --name happybubbles-presence -p 5555:5555 johncardenas/happybubbles-presence:latest`
 
 ### Docker-Compose
 Create a `docker-compose.yml` file and add the following:
 ```
 happybubbles-presence:
-   image: "johncardenas/happybubbles-presence:latest-amd64"
+   image: "johncardenas/happybubbles-presence:latest"
    restart: always
    environment:
       MQTT_HOST: "localhost:1883"
