@@ -9,7 +9,7 @@ At this time, only an amd64 image is built automatically. However, if you would 
 ## Usage
 ### Simple Command Line
 The following command will start the server using the default MQTT parameters:
->`docker run -it --name happybubbles-presence -p 5555:5555 johncardenas/happybubbles:latest-amd64`
+>`docker run -it --name happybubbles-presence -p 5555:5555 johncardenas/happybubbles:latest`
 
 ### Docker-Compose
 Create a `docker-compose.yml` file and add the following:
@@ -36,6 +36,9 @@ happybubbles-presence:
 
 ## Building the Image
 If you would like to make changes to the base Dockerfile, check out the GitHub repository and run this command to build it:
+
 >`docker build -t happybubbles-presence ./1.6.2/amd64`
+
 You can also build an arm32v7 image suitable for use on a Raspberry Pi 2+ with the following command:
+
 >`docker build -t happybubbles-presence ./1.6.2/arm32v7`
