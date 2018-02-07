@@ -2,7 +2,9 @@
 Easily run your HappyBubbles Presence Server in Docker, specifying an MQTT server to connect to from environment variables.
 
 ## Supported Tags
-* `1.7.0`, `1.6.2`, `latest`
+* `latest`, `1.8.0`
+* `1.7.0`
+* `1.6.2`
 
 At this time, only an amd64 image is built automatically. However, if you would like to build an image suitable for an ARM device, please see the **Building the Image** section below.
 
